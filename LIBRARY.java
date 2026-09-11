@@ -99,18 +99,21 @@ public class LIBRARY {
 	// REPORT
 	    public void generateReport()
 	    {
-	        int available = 0;
+	        int available = 0,issued=0;
 	        for (BOOK book : books) 
 	        {
 	            if (book.isAvaibable())
 	            {
 	                available++;
 	            }
+	            else {
+	            	issued++;
+	            }
 	        }
 	        System.out.println("\n----- LIBRARY REPORT -----");
 	        System.out.println("Total Books     : " + books.size());
 	        System.out.println("Available Books : " + available);
-	        System.out.println("Issued Books    : " + issuedBooks.size());
+	        System.out.println("Issued Books    : " + issued);
 	    }
 	
 }
