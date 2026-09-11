@@ -113,10 +113,10 @@ public class Main {
             	library.generateReport();
             	break;
             case 9://Exit
-            	System.out.println("Thank You.............");
+            	System.out.println("\nThank You");
             	break;
             default:
-            	System.err.println("Try Again Later");
+            	System.err.println("\nTry Again Later");
             }
             
         }while(choice!=9);
